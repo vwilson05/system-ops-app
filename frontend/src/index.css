@@ -1,0 +1,119 @@
+/* Ensure full dark background on the entire page */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;  /* Ensure full width */
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif;  /* Apply Inter font */
+  display: block;  /* Remove flex and block-level element for full width */
+}
+
+/* Body and root element to take full space */
+#root {
+  width: 100%;
+  height: 100%;
+  display: block; /* Ensure full page is used for content */
+}
+
+/* Dark Mode Variables */
+:root {
+  --background-color: #121212; /* Dark background */
+  --text-color: #ffffff;
+  --card-bg: #222222;
+  --highlight: #00C49F;
+  --border-color: #333333;
+}
+
+/* Ensure all Ant Design Layouts and Content have dark background */
+.ant-layout, .ant-layout-header, .ant-layout-footer, .ant-layout-content {
+  background-color: var(--background-color) !important;
+}
+
+.ant-menu {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Ant Design Table */
+.ant-table {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #333333 !important;
+  color: var(--text-color) !important;
+}
+
+.ant-table-tbody > tr > td {
+  color: var(--text-color) !important;
+}
+
+/* Ant Design Buttons */
+.ant-btn {
+  background-color: var(--highlight) !important;
+  color: white !important;
+  border: none !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.ant-btn:hover {
+  background-color: #00b386 !important;
+}
+
+/* Card styles */
+.ant-card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Links */
+a {
+  color: var(--highlight);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: #00b386;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--highlight);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--highlight);
+}
+
+/* Optional: Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #213547;
+    --card-bg: #f9f9f9;
+    --highlight: #646cff;
+    --border-color: #dddddd;
+  }
+}

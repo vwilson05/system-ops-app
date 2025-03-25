@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+
+# Vite build output
+dist/
+
+# Python virtual environment
+venv/
+ENV/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Log files
+*.log
+
+# Coverage reports
+coverage/
+
+# Build directories (Python)
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environment variables (avoid committing secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Additional directories
+*.bak
+*.swp

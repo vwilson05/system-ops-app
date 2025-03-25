@@ -1,0 +1,85 @@
+-- 1. Truncate the products table and reset its identity sequence.
+TRUNCATE TABLE products RESTART IDENTITY CASCADE;
+
+-- Insert sample products.
+INSERT INTO products (name, category_id, supplier_id, price, shelf_life_days, reorder_point) VALUES
+-- Category 13: Produce
+('Organic Apples', 13, 21, 0.89, 30, 50),
+('Fresh Bananas', 13, 22, 0.69, 30, 50),
+('Red Grapes', 13, 23, 2.49, 7, 20),
+('Green Apples', 13, 24, 0.99, 30, 50),
+('Fresh Oranges', 13, 25, 1.29, 30, 40),
+('Crisp Lettuce', 13, 26, 1.99, 7, 20),
+('Juicy Tomatoes', 13, 27, 1.09, 7, 30),
+('Ripe Avocados', 13, 28, 1.49, 5, 15),
+('Sweet Potatoes', 13, 29, 0.79, 30, 40),
+('Fresh Spinach', 13, 30, 1.29, 5, 15),
+('Potato Salad', 13, 30, 20.99, 3, 100),
+
+-- Category 14: Dairy
+('Whole Milk', 14, 21, 2.99, 10, 20),
+('Greek Yogurt', 14, 22, 1.99, 14, 25),
+('Cheddar Cheese', 14, 23, 3.99, 14, 10),
+('Mozzarella Cheese', 14, 24, 3.49, 14, 10),
+('Organic Butter', 14, 25, 4.49, 30, 10),
+('Low-Fat Milk', 14, 26, 2.49, 10, 20),
+('Cottage Cheese', 14, 27, 2.99, 14, 10),
+('Sour Cream', 14, 28, 1.99, 14, 10),
+('Cream Cheese', 14, 29, 2.49, 14, 10),
+('Skim Milk', 14, 30, 2.29, 10, 20),
+
+('Chicken Breast', 15, 21, 4.99, 5, 30),
+('Ground Beef', 15, 22, 5.49, 4, 20),
+('Pork Chops', 15, 23, 6.99, 5, 15),
+('Turkey', 15, 24, 7.49, 5, 10),
+('Lamb Chops', 15, 25, 8.99, 4, 8),
+('Bacon', 15, 26, 5.99, 4, 8),
+('Sausages', 15, 27, 4.99, 4, 8),
+('Ham', 15, 28, 6.49, 5, 10),
+('Steak', 15, 29, 9.99, 3, 5),
+('Fish Fillet', 15, 30, 7.99, 3, 5),
+
+('Whole Wheat Bread', 16, 21, 2.49, 3, 20),
+('Baguette', 16, 22, 2.99, 3, 10),
+('Croissant', 16, 23, 1.99, 2, 15),
+('Bagel', 16, 24, 1.49, 3, 20),
+('Muffins', 16, 25, 2.99, 3, 10),
+('Donuts', 16, 26, 1.99, 2, 15),
+('Sourdough Bread', 16, 27, 2.99, 3, 10),
+('Pita Bread', 16, 28, 1.99, 3, 10),
+('English Muffins', 16, 29, 1.99, 3, 10),
+('Rye Bread', 16, 30, 2.49, 3, 10),
+
+('Orange Juice', 17, 21, 3.49, 7, 10),
+('Apple Juice', 17, 22, 3.49, 7, 10),
+('Sparkling Water', 17, 23, 1.99, 365, 15),
+('Cola', 17, 24, 1.99, 365, 15),
+('Green Tea', 17, 25, 4.49, 365, 10),
+('Black Tea', 17, 26, 4.49, 365, 10),
+('Coffee', 17, 27, 8.99, 365, 10),
+('Lemonade', 17, 28, 3.99, 7, 10),
+('Iced Tea', 17, 29, 3.49, 7, 10),
+('Mineral Water', 17, 30, 0.99, 365, 15),
+
+('Frozen Pizza', 18, 21, 5.99, 90, 5),
+('Ice Cream', 18, 22, 3.99, 90, 5),
+('Frozen Vegetables', 18, 23, 3.99, 180, 5),
+('Frozen Fruit', 18, 24, 4.49, 180, 5),
+('Frozen French Fries', 18, 25, 3.49, 90, 5),
+('Frozen Burritos', 18, 26, 4.99, 90, 5),
+('Frozen Peas', 18, 27, 2.49, 180, 5),
+('Frozen Corn', 18, 28, 2.49, 180, 5),
+('Frozen Seafood', 18, 29, 6.99, 90, 5),
+('Frozen Lasagna', 18, 30, 5.99, 90, 5)
+,('Organic Apples - Premium', 13, 21, 0.99, 30, 50),
+('Organic Apples - Regular', 13, 22, 0.89, 30, 50),
+('Fresh Bananas - Local', 13, 23, 0.69, 30, 50),
+('Red Grapes - Imported', 13, 24, 2.79, 7, 20),
+('Green Apples - Granny Smith', 13, 25, 1.09, 30, 50),
+('Fresh Oranges - Valencia', 13, 26, 1.29, 30, 40),
+('Crisp Lettuce - Romaine', 13, 27, 1.99, 7, 20),
+('Juicy Tomatoes - Heirloom', 13, 28, 1.19, 7, 30),
+('Ripe Avocados - Hass', 13, 29, 1.59, 5, 15),
+('Sweet Potatoes - Organic', 13, 30, 0.89, 30, 40)
+;
+
