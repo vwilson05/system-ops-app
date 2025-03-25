@@ -4,26 +4,6 @@ A full-stack web application for managing grocery inventory, sales, and orders. 
 
 This repository also contains configurations for dockerizing the app for local development and cloud deployment.
 
----
-
-## Table of Contents
-
-- [Features](#features)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Local Setup](#local-setup)
-- [Dockerization](#dockerization)
-  - [Backend Dockerfile](#backend-dockerfile)
-  - [Frontend Dockerfile](#frontend-dockerfile)
-  - [Docker Compose](#docker-compose)
-- [Running Locally with Honcho](#running-locally-with-honcho)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## Features
 
 - **Inventory Management:** Track products, quantities, shelf life, and reorder points across multiple locations.
